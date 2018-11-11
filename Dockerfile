@@ -11,7 +11,7 @@ RUN apk update && apk --no-cache add freetype libpng libjpeg-turbo freetype-dev 
   --with-jpeg-dir=/usr/include/ \
   --with-zlib-dir=/usr \
  && NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
- && docker-php-ext-install -j${NPROC} gd zip pdo_mysql mbstring \
+ && docker-php-ext-install -j${NPROC} gd zip pdo_mysql mbstring exif \
  && apk del --no-cache freetype-dev libpng-dev libjpeg-turbo-dev
 
 RUN wget https://dl.laravel-china.org/composer.phar -O /usr/local/bin/composer \
