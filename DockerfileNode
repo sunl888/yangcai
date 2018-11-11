@@ -1,0 +1,11 @@
+FROM node:8
+
+COPY deploy/source.list /etc/apk/repositories
+
+ADD . /var/www
+
+WORKDIR /var/www
+
+RUN apt update && apt install git autoconf \
+ && npm install --registry=https://registry.npm.taobao.org \
+ && npm build
