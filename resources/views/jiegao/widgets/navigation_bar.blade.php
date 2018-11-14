@@ -32,7 +32,7 @@
     <div class="container">
         <a class="logo" href="#"><img src="{!! cdn('jiegao/images/logo.png') !!}" alt="{{setting('site_name')}}"></a>
         <div class="right">
-            <span>服务热线：{{setting('phone')}}</span>
+            <!-- <span>服务热线：{{setting('phone')}}</span> -->
             <div class="search">
                 <form id="search_form" action="{{route('frontend.web.search')}}" method="GET">
                     <input id="search_input" placeholder="请输入关键字搜索.." type="text" name="keywords">

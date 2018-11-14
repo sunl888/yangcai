@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@section('title') - 捷高科技 @show</title>
+    <title>@section('title') - 旭日社工 @show</title>
     <meta name="description" content="@section('description')@show">
     <meta name="keywords" content="@section('keywords')@show">
     <link rel="stylesheet" type="text/css" href="{{cdn('jiegao/css/normalize.min.css')}}">

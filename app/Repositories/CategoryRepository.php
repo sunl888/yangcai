@@ -66,4 +66,9 @@ class CategoryRepository extends BaseRepository
     {
         return $this->model->where('cate_name', $cateName)->firstOrFail();
     }
+
+    public function findByCateId($cateId)
+    {
+        return $this->model->where('id', $cateId)->firstOrFail();
+    }
 }

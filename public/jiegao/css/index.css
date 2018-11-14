@@ -16,7 +16,8 @@ body{
     float: left;
 }
 .head .logo>img{
-    margin-top: 21px;
+    margin-top: 7px;
+    width: 465px;
 }
 
 .head .right{
@@ -101,6 +102,56 @@ body{
     bottom: 10px;
     z-index: 99;
 }
+.content_box_bg{
+    background-color: #fff;
+    padding-bottom: 15px;
+    height: 275px;
+    position: relative;
+}
+.content_box_bg .notice_container{
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
+    overflow: hidden;
+}
+.content_box_bg .content_list_bg{
+    padding-top: 15px;
+    position: relative;
+    overflow: visible;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content_list_bg li {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.content_list_bg li:hover a{
+    color: #1872B0;
+}
+.content_list_bg li a{
+    padding-right: 6px;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    padding: 6px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-decoration: none;
+}
+.content_list_bg li p{
+    color: #666;
+    padding-left: 10px;
+    margin: 0;
+}
+.content_list_bg li p span{
+    font-size: 12px;
+}
+
 .banner img{
     height: 340px;
 }
@@ -140,6 +191,7 @@ body{
 .content .about .info>img{
     float: left;
     padding: 0 10px 10px 0;
+    height: 140px;
 }
 
 .content .about .info>.text{
@@ -154,7 +206,7 @@ body{
     width: 365px;
 }
 
-.content .env_banner>.header>h2{
+.content .env_banner>.content_box_bg>h2{
     font-size: 18px;
     border-left: 3px #74A2C7 solid;
     padding-left: 10px;
@@ -220,11 +272,13 @@ body{
     padding: 10px;
     background-color: #fff;
     float: left;
-    margin: 0 20px;
+    margin: 0 5px;
     position: relative;
+    width: 196;
 }
 .prod .main .product_item img{
-    width: 200px;
+    width: 186px;
+    height: 130px;
 }
 .prod .main .product_item .mask_wrap, .prod .main .product_item .mask {
     position: absolute;
@@ -235,12 +289,12 @@ body{
     z-index: 1;
 }
 .prod .main .product_item  .product_item_title{
-	width: 200px;
     position: absolute;
     bottom: -33px;
     text-align: center;
     font-size: 14px;
     color: #666;
+    width: 206px;
     margin: 0;
 }
 .prod .main .product_item .mask_wrap span {
@@ -249,7 +303,7 @@ body{
     filter: alpha(opacity=0);
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
     z-index: 2;
     position: absolute;
@@ -317,10 +371,27 @@ body{
 }
 .bottom_footer {
     background-image: url(../images/footer_bg.png);
-    background-size: 100%;
-    background-attachment: fixed;
+    background-size: cover;
+    /* background-position: center;
+    background-attachment: fixed; */
     overflow: hidden;
     padding: 50px;
+    padding-bottom: 0;
+    position: relative;
+}
+.bottom_footer .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    z-index: 9;
+}
+.bottom_footer .footer_body{
+    position: relative;
+    z-index: 10;
 }
 .bottom_footer .left, .bottom_footer .right{
     float: left;
@@ -330,6 +401,10 @@ body{
 }
 .bottom_footer .left{
     border-right: 1px solid #B3B3B3;
+}
+.bottom_footer .qr_code {
+    width: 110px;
+    margin-right: 50px;
 }
 .bottom_footer h3{
     font-weight: normal;
@@ -353,7 +428,7 @@ body{
     margin: 30px auto;
     text-align: center;
     border-top: 1px solid #B3B3B3;
-    line-height: 80px;
+    /* line-height: 80px; */
 }
 .bottom_footer .copy>a{
     color: #ccc;
@@ -718,8 +793,13 @@ body{
 }
 .prod_list li img{
     width: 100%;
+    height: 140px;
 }
 .prod_list li h2{
     font-size: 14px;
     font-weight: normal;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-decoration: none;
 }
